@@ -1,0 +1,57 @@
+@import "transitions";
+
+
+//Css Reset
+html,
+body,
+div,
+h1,
+span {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+    &.scroll {
+        margin-top: -50px;
+    }
+}
+
+body {
+    font-size: 1em;
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-color: rgba(128, 128, 128, 0.06);
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    opacity: 0;  
+    transition: all .3s;
+    &.img-loader {
+        opacity: 1;
+    }
+}
+
+.animated {
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+#loading{
+    display: none;
+    
+    &.open {
+        display: block;
+        position: absolute;
+        font-size: 2rem;
+        right: 1%;
+        bottom: 1%;
+    }    
+}

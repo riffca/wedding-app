@@ -1,0 +1,24 @@
+<div id="an-lightbox">
+    <div class="mini-images-wrapper" v-show="!full">
+        <div class="img-wrap" v-for="img in foto" @click="current = img.id, full = !full">
+            <img :src="img.mini" v-load-img="0">
+        </div>
+    </div>
+    <div class="full-images-wrapper" v-show="full">
+    <!-- ******************************* -->
+        <div class="img-wrap"
+                v-for="img in foto" 
+                    v-show="index === img.id">
+    <!-- ******************************* -->
+            <img class="img" v-load-img
+                    @click="current = img.id+1" 
+                        :src="img.full"
+                            alt="Фото">
+            <span @click="full = !full" class="all-btn">Превью</span>
+            <span @click="current = img.id+1" class="next-btn">Вперед</span>
+            <span @click="current = img.id-1" class="previous-btn">Назад</span>
+        </div>
+    </div>
+</div>
+
+<!--создаем для каждого .img-wrap свои кнопки-->

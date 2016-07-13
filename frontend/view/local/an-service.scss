@@ -1,0 +1,85 @@
+#an-service {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 2%;
+    @media screen and (max-width: 768px) {
+        & {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .img-wrap {
+        max-width: 500px;
+        position: relative;
+        margin: 20px;
+        padding-bottom: 0px;
+        overflow: hidden;
+        box-shadow: 1px 2px 20px grey;
+        transition: all .1s ease;
+        img {
+            display: block;
+            max-width: 500px;
+            width: 100%;
+            height: auto;
+            margin-bottom: 0;
+        }
+    }
+    .service-name {
+        font-size: 2em;
+        position: absolute;
+        top: 40%;
+        right: 10%;
+        color: white;
+        &:hover {
+            cursor: pointer;
+            text-shadow: 1px 1px 1px black;
+        }
+        span {
+            cursor: pointer;
+        }
+    }
+    /*
+    /*И К О Н К И   Перепись Классов
+    */
+    .service-icon {
+        position: absolute;
+        left: 10%;
+        bottom: 10%;
+        max-width: 150px;
+        svg {
+            max-width: 120px;      
+        }
+
+        //С В А Д Ь Б Ы 
+        #wedding-circle-one,
+        #wedding-circle-two {
+            transition: all .4s;
+            stroke-width:4;
+        }
+        &:hover #wedding-circle-one {
+            transform: rotate(4deg) scale(.99);
+            stroke-width: 6;
+        }
+        &:hover #wedding-circle-two {
+            transform: scale(.99) translateX(10px) translateY(-10px);
+            stroke-width: 2;
+        }
+        //L O V E  S T O R Y
+        #love-heart-one,
+        #love-heart-two {
+            transition: all .4s;
+        }
+        #love-heart-two {
+            stroke-width: 5;
+        }
+        &:hover #love-heart-one {
+            transform: scale(.24);
+            stroke-width: 13;
+        }
+        &:hover #love-heart-two {
+            transform: scale(.99);
+            stroke-width: 3;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+.form-wrapper {
+    button {
+        font-family: 'Open Sans Condensed', sans-serif;
+        border: 1px solid grey;
+        font-size: 1rem;
+    	padding: 5px;
+        background: white;
+        
+        margin: 10px;
+
+        &:active, &:focus, &:hover {
+        	outline: none;
+        	cursor: pointer; 
+            background: lighten(grey, 30%);     
+        }
+    }
+    form {
+        cursor: default;
+        div {
+            margin: 4px;
+            label{
+                margin: 3px;
+                display: block;
+            }
+            input {
+            	padding: 5px;
+                font-size: 1.1rem;
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+<div id="an-modal" :class="{'show-modal': show }">
+
+	<span @click="show = !show" 
+		 		 v-show="!show"
+		 		 class="open-btn">
+		  {{ name }}
+	</span>
+
+	<div class="modal-window" 
+				v-show="show">
+		<div class="modal-content">
+			<slot>
+			</slot>
+		</div>
+		<span class="close-btn" 
+			  @click="show = !show">
+			 Закрыть
+		</span>
+	</div>
+
+</div>

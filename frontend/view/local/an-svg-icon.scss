@@ -1,0 +1,44 @@
+#an-svg-icon {
+    display: inline-block;
+    cursor: pointer;
+
+    svg {
+        height: 200px;
+        width: 200px;
+        transition: all .1s;
+        &:hover {
+            height: 203px;
+            width: 203px;
+        }
+    }
+    
+    //С В А Д Ь Б Ы 
+    #wedding-circle-one,
+    #wedding-circle-two {
+        transition: all .4s;
+    }
+    &:hover #wedding-circle-one {
+        transform: rotate(4deg) scale(.99);
+        stroke-width:6;
+    }
+
+    &:hover #wedding-circle-two {
+        transform: scale(.99);
+        stroke-width:2;
+    }
+
+    //L O V E  S T O R Y
+    #love-heart-one,
+    #love-heart-two {
+        transition: all .4s;
+    }
+    &:hover #love-heart-one {
+        transform: scale(.99);
+        stroke-width:6;
+    }
+
+    &:hover #love-heart-two {
+        transform: scale(.99);
+        stroke-width:2;
+    }
+}

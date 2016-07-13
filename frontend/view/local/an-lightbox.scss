@@ -1,0 +1,88 @@
+@mixin border() {
+    border: 1px solid black;
+}
+
+#an-lightbox {
+    height: 100%;
+    h1 {}
+    //not used
+    &.fixed-box{
+        position:fixed;
+        z-index: 9999;
+    }
+    .mini-images-wrapper {
+        max-width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .img-wrap {
+            cursor: pointer;
+            max-width: 320px;
+            margin: 1%;
+            box-shadow: 1px 1px 3px lighten(black, 40%);
+            img {
+                display: block;
+                max-width: 320px;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    .full-images-wrapper {
+        height: 100%;
+        .img-wrap {
+            cursor: pointer;
+            position: relative;
+            margin: 0 auto;
+            max-width: 1024px;
+            .next-btn,
+            .previous-btn {
+                cursor: pointer;
+                position: absolute;
+                top: 0;
+            }
+            .next-btn {
+                right: -10%;
+            }
+            .previous-btn {
+                left: -10%;
+            }
+            .all-btn {
+                cursor: pointer;
+                position: absolute;
+                top: 6%;
+                left: -10%;
+            }
+            @media screen and(max-width: 1241px) {
+                /*
+                /*Кнопки переключения
+                */
+                span {
+                    display: none;
+                }
+            }
+            .img/*относится к тегу img*/
+            {
+                display: block;
+                max-width: 1024px;
+                width: 100%;
+                height: auto;
+                margin: 0 auto;
+                @media screen and (min-width: 768px) {
+                    & {
+                        width: auto !important;
+                        //max-height: 768px;
+                    }
+                    /*
+                    /*Вариант для портретов
+                    */
+                    &.portrait {
+                       //@include imgWidth(60%);
+                    }
+                }
+            }
+            .img-album {}
+        }
+    }
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="400px" height="400px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 400 400"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:black;stroke-width:3.99922}
+    .str2 {stroke:black;stroke-width:4.99962}
+    .str1 {stroke:black;stroke-width:1.99961}
+    .fil0 {fill:none}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect id="wedding-circle-one" class="fil0 str0" x="43" y="129" width="328" height="211"/>
+  <circle id="wedding-circle-two" class="fil0 str1" cx="180" cy="241" r="81"/>
+  <rect id="love-heart-one" class="fil0 str1" x="264" y="111" width="96.3259" height="17.9249"/>
+  <circle id="love-heart-one" class="fil0 str2" cx="180" cy="241" r="67"/>
+ </g>
+</svg>

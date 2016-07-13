@@ -1,0 +1,8 @@
+*.zip
+*.rar
+node_modules/
+php/vendor
+.idea/
+php/.idea/
+php/public/upload
+backend/images/

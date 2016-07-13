@@ -1,0 +1,658 @@
+.animated {
+  animation-duration: .5s;
+  animation-fill-mode: both; }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.fadeIn {
+  animation-name: fadeIn; }
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0); }
+  to {
+    opacity: 1;
+    transform: none; } }
+
+.fadeInDown {
+  animation-name: fadeInDown; }
+
+@keyframes fadeInDownBig {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -2000px, 0); }
+  to {
+    opacity: 1;
+    transform: none; } }
+
+.fadeInDownBig {
+  animation-name: fadeInDownBig; }
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0); }
+  to {
+    opacity: 1;
+    transform: none; } }
+
+.fadeInLeft {
+  animation-name: fadeInLeft; }
+
+@keyframes fadeInLeftBig {
+  from {
+    opacity: 0;
+    transform: translate3d(-2000px, 0, 0); }
+  to {
+    opacity: 1;
+    transform: none; } }
+
+.fadeInLeftBig {
+  animation-name: fadeInLeftBig; }
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0); }
+  to {
+    opacity: 1;
+    transform: none; } }
+
+.fadeInRight {
+  animation-name: fadeInRight; }
+
+@keyframes fadeInRightBig {
+  from {
+    opacity: 0;
+    transform: translate3d(2000px, 0, 0); }
+  to {
+    opacity: 1;
+    transform: none; } }
+
+.fadeInRightBig {
+  animation-name: fadeInRightBig; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0); }
+  to {
+    opacity: 1;
+    transform: none; } }
+
+.fadeInUp {
+  animation-name: fadeInUp; }
+
+@keyframes fadeInUpBig {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 2000px, 0); }
+  to {
+    opacity: 1;
+    transform: none; } }
+
+.fadeInUpBig {
+  animation-name: fadeInUpBig; }
+
+@keyframes fadeOut {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+.fadeOut {
+  animation-name: fadeOut; }
+
+@keyframes fadeOutDown {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0); } }
+
+.fadeOutDown {
+  animation-name: fadeOutDown; }
+
+@keyframes fadeOutDownBig {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    transform: translate3d(0, 2000px, 0); } }
+
+.fadeOutDownBig {
+  animation-name: fadeOutDownBig; }
+
+@keyframes fadeOutLeft {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0); } }
+
+.fadeOutLeft {
+  animation-name: fadeOutLeft; }
+
+@keyframes fadeOutLeftBig {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    transform: translate3d(-2000px, 0, 0); } }
+
+.fadeOutLeftBig {
+  animation-name: fadeOutLeftBig; }
+
+@keyframes fadeOutRight {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0); } }
+
+.fadeOutRight {
+  animation-name: fadeOutRight; }
+
+@keyframes fadeOutRightBig {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    transform: translate3d(2000px, 0, 0); } }
+
+.fadeOutRightBig {
+  animation-name: fadeOutRightBig; }
+
+@keyframes fadeOutUp {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0); } }
+
+.fadeOutUp {
+  animation-name: fadeOutUp; }
+
+@keyframes fadeOutUpBig {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    transform: translate3d(0, -2000px, 0); } }
+
+.fadeOutUpBig {
+  animation-name: fadeOutUpBig; }
+
+html,
+body,
+div,
+h1,
+span {
+  padding: 0;
+  margin: 0; }
+
+html,
+body {
+  height: 100%; }
+  html.scroll,
+  body.scroll {
+    margin-top: -50px; }
+
+body {
+  font-size: 1em;
+  font-family: 'Open Sans Condensed', sans-serif;
+  background-color: rgba(128, 128, 128, 0.06); }
+
+ul {
+  list-style: none; }
+
+img {
+  opacity: 0;
+  transition: all .3s; }
+  img.img-loader {
+    opacity: 1; }
+
+.animated {
+  animation-duration: .5s;
+  animation-fill-mode: both; }
+
+#loading {
+  display: none; }
+  #loading.open {
+    display: block;
+    position: absolute;
+    font-size: 2rem;
+    right: 1%;
+    bottom: 1%; }
+#an-customer {
+  position: relative;
+  margin: 10px auto;
+  max-width: 50%; }
+  @media screen and (max-width: 960px) {
+    #an-customer {
+      max-width: 70%; } }
+  #an-customer .show-view span {
+    display: inline-block;
+    text-align: left;
+    padding: 1%; }
+  #an-customer .show-view .customer-name {
+    font-size: 1.5rem;
+    width: 200px; }
+  #an-customer .show-view .customer-contact {
+    text-align: center;
+    font-size: 1.3rem;
+    width: 400px; }
+  #an-customer .edit-view {
+    margin-left: 30%; }
+  #an-customer > button {
+    position: absolute;
+    top: 2%;
+    right: 2%; }
+#an-svg-icon {
+  display: inline-block;
+  cursor: pointer; }
+  #an-svg-icon svg {
+    height: 200px;
+    width: 200px;
+    transition: all .1s; }
+    #an-svg-icon svg:hover {
+      height: 203px;
+      width: 203px; }
+  #an-svg-icon #wedding-circle-one,
+  #an-svg-icon #wedding-circle-two {
+    transition: all .4s; }
+  #an-svg-icon:hover #wedding-circle-one {
+    transform: rotate(4deg) scale(0.99);
+    stroke-width: 6; }
+  #an-svg-icon:hover #wedding-circle-two {
+    transform: scale(0.99);
+    stroke-width: 2; }
+  #an-svg-icon #love-heart-one,
+  #an-svg-icon #love-heart-two {
+    transition: all .4s; }
+  #an-svg-icon:hover #love-heart-one {
+    transform: scale(0.99);
+    stroke-width: 6; }
+  #an-svg-icon:hover #love-heart-two {
+    transform: scale(0.99);
+    stroke-width: 2; }
+#an-album-brand .album-icon {
+  text-align: center; }
+  #an-album-brand .album-icon > img,
+  #an-album-brand .album-icon h1 {
+    font-weight: normal;
+    font-family: 'Bad Script', cursive;
+    display: inline-block;
+    cursor: pointer; }
+
+#an-album-brand .icon {
+  width: 300px;
+  height: 300px; }
+@charset "UTF-8";
+#an-brand {
+  box-sizing: border-box;
+  background: #7d92b9;
+  padding-bottom: 0.8%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.17);
+  box-shadow: 1px 2px 20px grey;
+  /*
+    /*Навигация
+    */
+  /*
+    /*Аутентификация кнопка
+    */
+  /*Логотип*/ }
+  #an-brand a {
+    padding: 0 3px 1px 2px;
+    color: white; }
+  #an-brand.lightbox-activate {
+    display: none; }
+  #an-brand .brand-wrapper {
+    box-sizing: border-box;
+    position: relative;
+    padding-left: 30%;
+    padding-top: 0.6%;
+    color: #f2f2da;
+    /*
+        /*Кнопка Цены
+        */ }
+    #an-brand .brand-wrapper .price-btn {
+      margin-right: 40%;
+      float: right;
+      /*
+            /*Кнопка купить
+            */ }
+      #an-brand .brand-wrapper .price-btn .price-options {
+        position: relative;
+        margin-top: 8%;
+        font-size: 1.2rem;
+        font-weight: normal; }
+        #an-brand .brand-wrapper .price-btn .price-options .hand-made-disc {
+          display: none; }
+          @media screen and (min-width: 1330px) {
+            #an-brand .brand-wrapper .price-btn .price-options .hand-made-disc {
+              display: block;
+              max-width: 200px;
+              width: 100%;
+              height: auto;
+              position: absolute;
+              top: 25%;
+              right: 20%;
+              opacity: 1;
+              z-index: 1; } }
+      #an-brand .brand-wrapper .price-btn .one-hour-price p .price {
+        font-size: 1.3rem;
+        font-weight: bold; }
+      #an-brand .brand-wrapper .price-btn .wedding-price .wedding-mini ul {
+        margin: 0;
+        padding: 0; }
+      #an-brand .brand-wrapper .price-btn .wedding-price .wedding-normal ul {
+        margin: 0;
+        padding: 0; }
+      #an-brand .brand-wrapper .price-btn .camera-svg {
+        position: absolute;
+        top: 40%;
+        right: 10%; }
+      #an-brand .brand-wrapper .price-btn .buy-button {
+        padding: 10px; }
+        #an-brand .brand-wrapper .price-btn .buy-button:hover {
+          box-shadow: 0px 1px 1px grey;
+          border-radius: 3px;
+          cursor: pointer; }
+  #an-brand .link-wrapper {
+    padding-left: 30%; }
+  @media screen and (min-width: 559px) and (max-width: 1100px) {
+    #an-brand .price-btn {
+      margin-right: 2% !important; } }
+  @media screen and (max-width: 700px) {
+    #an-brand .price-btn {
+      display: none; } }
+  #an-brand .auth-btn,
+  #an-brand .logout-btn {
+    color: #7d92b9;
+    float: right;
+    margin-right: 1%; }
+    #an-brand .auth-btn:hover,
+    #an-brand .logout-btn:hover {
+      cursor: pointer;
+      color: white; }
+    #an-brand .auth-btn .form-wrapper,
+    #an-brand .logout-btn .form-wrapper {
+      margin-top: 30%;
+      text-align: center; }
+  #an-brand .brand-name {
+    margin-left: 10px;
+    font-weight: normal;
+    line-height: 10px;
+    font-family: 'Bad Script', cursive; }
+    #an-brand .brand-name:hover {
+      cursor: pointer;
+      color: white; }
+@charset "UTF-8";
+#an-service {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding-top: 2%;
+  /*
+    /*И К О Н К И   Перепись Классов
+    */ }
+  @media screen and (max-width: 768px) {
+    #an-service {
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-align: center;
+          -ms-grid-row-align: center;
+          align-items: center; } }
+  #an-service .img-wrap {
+    max-width: 500px;
+    position: relative;
+    margin: 20px;
+    padding-bottom: 0px;
+    overflow: hidden;
+    box-shadow: 1px 2px 20px grey;
+    transition: all .1s ease; }
+    #an-service .img-wrap img {
+      display: block;
+      max-width: 500px;
+      width: 100%;
+      height: auto;
+      margin-bottom: 0; }
+  #an-service .service-name {
+    font-size: 2em;
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    color: white; }
+    #an-service .service-name:hover {
+      cursor: pointer;
+      text-shadow: 1px 1px 1px black; }
+    #an-service .service-name span {
+      cursor: pointer; }
+  #an-service .service-icon {
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    max-width: 150px; }
+    #an-service .service-icon svg {
+      max-width: 120px; }
+    #an-service .service-icon #wedding-circle-one,
+    #an-service .service-icon #wedding-circle-two {
+      transition: all .4s;
+      stroke-width: 4; }
+    #an-service .service-icon:hover #wedding-circle-one {
+      transform: rotate(4deg) scale(0.99);
+      stroke-width: 6; }
+    #an-service .service-icon:hover #wedding-circle-two {
+      transform: scale(0.99) translateX(10px) translateY(-10px);
+      stroke-width: 2; }
+    #an-service .service-icon #love-heart-one,
+    #an-service .service-icon #love-heart-two {
+      transition: all .4s; }
+    #an-service .service-icon #love-heart-two {
+      stroke-width: 5; }
+    #an-service .service-icon:hover #love-heart-one {
+      transform: scale(0.24);
+      stroke-width: 13; }
+    #an-service .service-icon:hover #love-heart-two {
+      transform: scale(0.99);
+      stroke-width: 3; }
+#an-modal {
+  display: inline-block;
+  transition: all .9s; }
+  #an-modal .open-btn {
+    cursor: pointer;
+    font-weight: normal; }
+  #an-modal .modal-window {
+    color: black;
+    position: relative;
+    width: 60%;
+    height: 80%;
+    overflow: auto;
+    margin: 7% auto 0 auto;
+    background: white; }
+    #an-modal .modal-window .close-btn {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      margin-right: 0.4%;
+      margin-top: 0.4%;
+      font-size: 2rem;
+      cursor: pointer;
+      font-weight: normal; }
+    @media screen and (max-width: 800px) {
+      #an-modal .modal-window {
+        width: 100%;
+        height: 100%;
+        margin: 0; } }
+  #an-modal.show-modal {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9999; }
+@charset "UTF-8";
+#an-lightbox {
+  height: 100%; }
+  #an-lightbox.fixed-box {
+    position: fixed;
+    z-index: 9999; }
+  #an-lightbox .mini-images-wrapper {
+    max-width: 90%;
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    #an-lightbox .mini-images-wrapper .img-wrap {
+      cursor: pointer;
+      max-width: 320px;
+      margin: 1%;
+      box-shadow: 1px 1px 3px #666666; }
+      #an-lightbox .mini-images-wrapper .img-wrap img {
+        display: block;
+        max-width: 320px;
+        width: 100%;
+        height: auto; }
+  #an-lightbox .full-images-wrapper {
+    height: 100%; }
+    #an-lightbox .full-images-wrapper .img-wrap {
+      cursor: pointer;
+      position: relative;
+      margin: 0 auto;
+      max-width: 1024px; }
+      #an-lightbox .full-images-wrapper .img-wrap .next-btn,
+      #an-lightbox .full-images-wrapper .img-wrap .previous-btn {
+        cursor: pointer;
+        position: absolute;
+        top: 0; }
+      #an-lightbox .full-images-wrapper .img-wrap .next-btn {
+        right: -10%; }
+      #an-lightbox .full-images-wrapper .img-wrap .previous-btn {
+        left: -10%; }
+      #an-lightbox .full-images-wrapper .img-wrap .all-btn {
+        cursor: pointer;
+        position: absolute;
+        top: 6%;
+        left: -10%; }
+      @media screen and (max-width: 1241px) {
+        #an-lightbox .full-images-wrapper .img-wrap {
+          /*
+                /*Кнопки переключения
+                */ }
+          #an-lightbox .full-images-wrapper .img-wrap span {
+            display: none; } }
+      #an-lightbox .full-images-wrapper .img-wrap .img {
+        display: block;
+        max-width: 1024px;
+        width: 100%;
+        height: auto;
+        margin: 0 auto; }
+        @media screen and (min-width: 768px) {
+          #an-lightbox .full-images-wrapper .img-wrap .img {
+            /*
+                    /*Вариант для портретов
+                    */ }
+            #an-lightbox .full-images-wrapper .img-wrap .img {
+              width: auto !important; } }
+#an-album {
+  clear: both;
+  height: 100%;
+  transition: all .3s ease; }
+  #an-album h1 {
+    text-align: center; }
+    #an-album h1 span {
+      cursor: pointer; }
+  #an-album.fixed-album {
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    background: white;
+    width: 100%; }
+    #an-album.fixed-album h1 {
+      box-shadow: -1px -1px 30px rgba(0, 0, 0, 0.6);
+      padding-bottom: 10px;
+      padding-top: 20px;
+      color: #f2f2da;
+      background: #7d92b9; }
+    #an-album.fixed-album #an-lightbox {
+      padding-top: 20px;
+      overflow: auto; }
+.form-wrapper button {
+  font-family: 'Open Sans Condensed', sans-serif;
+  border: 1px solid grey;
+  font-size: 1rem;
+  padding: 5px;
+  background: white;
+  margin: 10px; }
+  .form-wrapper button:active, .form-wrapper button:focus, .form-wrapper button:hover {
+    outline: none;
+    cursor: pointer;
+    background: #cdcdcd; }
+
+.form-wrapper form {
+  cursor: default; }
+  .form-wrapper form div {
+    margin: 4px; }
+    .form-wrapper form div label {
+      margin: 3px;
+      display: block; }
+    .form-wrapper form div input {
+      padding: 5px;
+      font-size: 1.1rem; }
+      .form-wrapper form div input:focus {
+        outline: none; }
+#love-story .service-brand {
+  margin-left: 5%; }
+
+#love-story .love-brand h1 {
+  cursor: pointer;
+  display: inline-block;
+  padding-left: 5%; }
+
+#love-story .love-links {
+  float: right;
+  margin-right: 10px; }
+  #love-story .love-links div {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 20px; }
+    #love-story .love-links div.v-link-active {
+      border-radius: 3px;
+      box-shadow: 0px 1px 1px grey;
+      padding: 3px 50px 3px 3px; }
+  #love-story .love-links img {
+    height: 30px;
+    width: 30px; }
+#wedding .wedding-brand h1 {
+  cursor: pointer;
+  display: inline-block;
+  padding-left: 5%; }
+
+#wedding .wedding-links {
+  float: right;
+  margin-right: 10px; }
+  #wedding .wedding-links div {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 20px; }
+    #wedding .wedding-links div.v-link-active {
+      border-radius: 3px;
+      box-shadow: 0px 1px 1px grey;
+      padding: 3px 50px 3px 3px; }
+  #wedding .wedding-links img {
+    height: 30px;
+    width: 30px; }

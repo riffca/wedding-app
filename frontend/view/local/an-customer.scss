@@ -1,0 +1,34 @@
+#an-customer {
+    position: relative;
+    margin: 10px auto;
+    max-width: 50%;
+    @media screen and (max-width: 960px) {
+        & {
+            max-width: 70%;
+        }
+    }
+    .show-view {
+        span {
+            display: inline-block;
+            text-align: left;
+            padding: 1%;
+        }
+        .customer-name {
+            font-size: 1.5rem;
+            width: 200px;
+        }
+        .customer-contact {
+            text-align: center;
+            font-size: 1.3rem;
+            width: 400px;
+        }
+    }
+    .edit-view {
+        margin-left: 30%;
+    }
+    > button {
+        position: absolute;
+        top: 2%;
+        right:2%;
+    }
+}
