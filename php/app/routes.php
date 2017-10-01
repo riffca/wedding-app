@@ -22,6 +22,11 @@ $app->get('/phpinfo', function ($request, $response) {
     phpinfo();
 });
 
+$app->get('/what', function ($request, $response) {
+    return "hello";
+});
+
+
 $app->get('/[{params:.*}]', function ($request, $response) {
     return $this->renderer->render($response, 'index.phtml');
 });
